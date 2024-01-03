@@ -18,4 +18,4 @@ body {
   margin: 10% 40%;
 }
 
-.button:hover {transform: scale(1.2) perspective 1px;}
+.button:hover {transform: scale(1.1)}
