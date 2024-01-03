@@ -5,3 +5,17 @@ html {
 body {
   background-color: #212121;
 }
+.button {
+  padding: 5% 10%;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: #5c5c5c;
+  color: #373737;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15%;
+  margin: 10% 40%;
+}
+
+.button:hover {padding: 8% 13%;}
