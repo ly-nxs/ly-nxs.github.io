@@ -5,11 +5,18 @@ html {
 body {
   background-color: #212121;
 }
-.center {
-  margin: auto;
-  width: 50%;
-  border: none;
-  padding: 10px;
+.container {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .button {
   border: none;
