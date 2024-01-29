@@ -72,8 +72,7 @@ function check(){
 if(width > 100){
 document.getElementById("errm").innerHTML = "You Cannot Go Over 100%, Reset Imminent";
 setTimeout(function() {
-  mover();
-  document.getElementById("errm").innerHTML = "";
+  location.href = "bsod.html";
 
 }, 5000);
 
