@@ -1,52 +1,86 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-#myProgress {
+* {box-sizing: border-box}
+
+.container {
   width: 100%;
-  background-color: #ddd;
+
+  background-color: darkgrey;
 }
 
-#myBar {
-  width: 10%;
-  height: 30px;
-  background-color: #04AA6D;
-  text-align: center;
-  line-height: 30px;
-  color: white;
-}
-</style>
-<body>
-
-<h1>JavaScript Progress Bar</h1>
-
-<div id="myProgress">
-  <div id="myBar">10%</div>
-</div>
-
-<br>
-<button onclick="move()">Click Me</button> 
-
-<script>
-var i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 10;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width  + "%";
-      }
-    }
+.skills {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: black;
+  font-family:arial;
+  .buttonF {
+  background-color: green;
   }
 }
+
+.html {width: 90%; background-color: grey;}
+
+</style>
+</head>
+<body style="background-color:black;">
+
+
+
+<div class="container" id="myProgress">
+  <div class="skills html" id="myBar">90%</div>
+</div>
+<button class="buttonF" onclick="move()">+6</button> 
+<button onclick="moved()">/2</button> 
+<button onclick="movem()">*1.25</button> 
+<button onclick="mover()">restart</button> 
+<p style="color:red;" id="errm"></p>
+<script>
+var width = 0;
+var elem = document.getElementById("myBar");
+elem.style.width = width + "%";
+elem.innerHTML = width  + "%";
+function move(){
+width += 6;
+elem.style.width = width + "%";
+elem.innerHTML = width  + "%";
+check();
+}
+function moved(){
+width = width/2;
+elem.style.width = width + "%";
+elem.innerHTML = width  + "%";
+check();
+}
+function movem(){
+width = width * 1.25;
+elem.style.width = width + "%";
+elem.innerHTML = width  + "%";
+check();
+}
+function mover(){
+width = 0;
+elem.style.width = width + "%";
+elem.innerHTML = width  + "%";
+}
+function check(){
+if(width > 100){
+document.getElementById("errm").innerHTML = "You Cannot Go Over 100%, Reset Imminent";
+setTimeout(function() {
+  mover();
+  document.getElementById("errm").innerHTML = "";
+
+}, 5000);
+
+}
+}
 </script>
+
 
 </body>
 </html>
