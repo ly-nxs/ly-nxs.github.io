@@ -1,0 +1,33 @@
+body{
+    
+    color:white;
+    font:arial;
+    font-size:20;
+    
+    
+}
+
+.button{
+  border: none;
+  color:white;
+  padding: 16px 42px;
+  text-align: center;
+  display:block;
+  font-size: 20px;
+  font-weight:60;
+  cursor: pointer;
+}
+
+
+.button1{
+    background-color:#202021;
+    transition-duration:0.2s;
+ 
+}
+
+.button1:hover{
+    border: none;
+    background-color:#2f2f30;
+    margin: 0px 16px;
+    
+}
