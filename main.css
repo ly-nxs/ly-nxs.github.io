@@ -1,33 +1,27 @@
 body{
-    
+    background-color:black;
     color:white;
     font:arial;
     font-size:20;
-    
-    
 }
 
 .button{
   border: none;
   color:white;
-  padding: 16px 42px;
+  background-color:gray;
+  padding: 2.75% 5%;
   text-align: center;
   display:block;
   font-size: 20px;
   font-weight:60;
   cursor: pointer;
+  display:inline-block;
 }
 
 
 .button1{
-    background-color:#202021;
-    transition-duration:0.2s;
- 
+    background-color:#00000;
+    padding:45px 45px;
 }
 
-.button1:hover{
-    border: none;
-    background-color:#2f2f30;
-    margin: 0px 16px;
-    
-}
+
