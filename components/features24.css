@@ -145,9 +145,6 @@
 .features24-text4 {
   display: inline-block;
 }
-.features24root-class-name {
-  align-self: flex-start;
-}
 @media(max-width: 991px) {
   .features24-container2 {
     grid-gap: var(--dl-space-space-twounits);
