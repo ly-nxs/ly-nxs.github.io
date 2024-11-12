@@ -104,8 +104,8 @@
   justify-content: center;
 }
 .features251-image-container {
-  height: 100%;
-  display: flex;
+  width: 400px;
+  display:flex;
   position: relative;
 }
 .features251-image1 {
@@ -115,6 +115,8 @@
   animation-direction: normal;
   animation-iteration-count: 1;
   animation-timing-function: ease;
+  width: 400px;
+  
 }
 .features251-image2 {
   animation-name: fadeIn;
