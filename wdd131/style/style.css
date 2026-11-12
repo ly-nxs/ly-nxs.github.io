@@ -1,0 +1,32 @@
+.bg-gray-100 {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    margin: 25%;
+    border: 20px solid #000000;
+    border-radius: 20px;
+    padding: 0px;
+}
+.heading {
+    font-size: 2em;
+    
+    color: #FF0000;
+  
+    text-align: center;
+
+    
+}
+.p{
+    font-size: 1.2em;
+    color: #0000FF;
+   
+    text-align: center;
+}
+#goober {
+    font-size: 1.5em;
+    color: #00FF00;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #000000;
+}
