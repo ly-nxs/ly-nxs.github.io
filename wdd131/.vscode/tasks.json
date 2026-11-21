@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile GLSL to QSB",
+            "type": "shell",
+            "command": "/usr/lib/qt6/bin/qsb",
+            "args": [
+                "--glsl", "100 es,120,330",
+                "--hlsl", "50",
+                "--msl", "12",
+                "-o", "${fileDirname}/${fileBasenameNoExtension}.qsb",
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
