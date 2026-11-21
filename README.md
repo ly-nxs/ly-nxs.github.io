@@ -1,1 +1,1 @@
-(ly-nxs.github.io)[https://ly-nxs.github.io]
+# [ly-nxs.github.io](https://ly-nxs.github.io)
